@@ -1,2 +1,2 @@
 Second word
- I love :coffe:, :theatre: and :meeting whith friends:
+ I love :coffe:, :theatre: and :meeting whith friends:!
