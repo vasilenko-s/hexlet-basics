@@ -38,5 +38,6 @@ $isUniqueString = function ($string) {
         }
         return 0;
     };
-    return $findBiggestUniqueSubstringLength($str);
+
+return $findBiggestUniqueSubstringLength($str);
 // END
