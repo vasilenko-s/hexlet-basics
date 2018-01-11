@@ -6,7 +6,8 @@
 
 Четыре нуклеотида в РНК это аденин (A), цитозин (C), гуанин (G) и урацил (U).
 
-Цепь РНК составляется на основе цепи ДНК последовательной заменой каждого нуклеотида:
+Цепь РНК составляется на основе цепи ДНК последовательной заменой каждого
+нуклеотида:
 
     G -> C
     C -> G
@@ -27,27 +28,27 @@ namespace App\Solution;
 // BEGIN (write your solution here)
 function toRna($str)
 {
-  $length=strlen($str);
-  $result="";
-  for ($i=0; $i<=$length-1; $i++) {
-      switch ($str[$i]) {
-      case 'G':
-        $result[$i]='C';
-        break;
-      case 'C':
-        $result[$i]='G';
-        break;
-      case 'T':
-        $result[$i]='A';
-        break;
-      case 'A':
-        $result[$i]='U';
-        break;
-      default:
-          break;
+    $length=strlen($str);
+    $result="";
+    for ($i=0; $i<=$length-1; $i++) {
+        switch ($str[$i]) {
+            case 'G':
+                $result[$i]='C';
+                break;
+            case 'C':
+                $result[$i]='G';
+                break;
+            case 'T':
+                $result[$i]='A';
+                break;
+            case 'A':
+                $result[$i]='U';
+                break;
+            default:
+                break;
       }
   }
-  $result=implode($result);
-  return $result;
+      $result=implode('', $result);
+      return $result;
 }
 // END
