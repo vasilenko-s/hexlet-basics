@@ -27,14 +27,14 @@ namespace App\Solution;
 // BEGIN (write your solution here)
 function toRna($nucleotide)
 {
-  // асоциативный массив - карта преобразований
+    // асоциативный массив - карта преобразований
     $map = [
         'G' => 'C',
         'C' => 'G',
         'T' => 'A',
         'A' => 'U'
     ];
-// длина цепи
+    // длина цепи
     $length = strlen($nucleotide);
 
     $result = [];

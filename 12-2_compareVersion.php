@@ -20,31 +20,19 @@ version1 и version2. Если version1 > version2, то функция долж
 */
 
 namespace App\Solution;
-
-// BEGIN (write your solution here)
-
-
-
-function compareVersion($version1, $version2)
+// BEGIN
+function compareVersion($first, $second)
 {
-    //разбить строку на два числа
-    $arrVers1=explode(".", $version1);
-    $arrVers2=explode(".", $version2);
-    //сравнить непосредственно пару чисел
-    if ($arrVers1[0]>$arrVers2[0]) {
+    $version1 = explode('.', $first);
+    $version2 = explode('.', $second);
+
+    // сравниваем массивы. Сравниваются элементы поочередно
+    if ($version1 > $version2) {
         return 1;
-    } elseif ($arrVers1[0]<$arrVers2[0]) {
-        return -1;
-    } elseif (($arrVers1[0]==$arrVers2[0])&&($arrVers1[1]>$arrVers2[1])) {
-        return 1;
-    } elseif (($arrVers1[0]==$arrVers2[0])&&($arrVers1[1]<$arrVers2[1])) {
-        return -1;
-    } elseif (($arrVers1[0]==$arrVers2[0])&&($arrVers1[1]==$arrVers2[1])) {
+    } elseif ($version1 == $version2) {
         return 0;
+    } else {
+        return -1;
     }
-
-
 }
-
-
 // END

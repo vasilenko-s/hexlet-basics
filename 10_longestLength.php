@@ -11,8 +11,6 @@ qwe, weqrty. Самой длинной будет weqrty.
 longestLength('abcdeef'); // 5
 longestLength('jabjcdel'); // 7
 
-
-
 */
 
 namespace App\Solution;
