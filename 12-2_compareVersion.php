@@ -28,7 +28,7 @@ function compareVersion($first, $second)
 
     // сравниваем массивы. Сравниваются элементы поочередно
     if ($version1 > $version2) {
-        return 1;
+       return 1;
     } elseif ($version1 == $version2) {
         return 0;
     } else {

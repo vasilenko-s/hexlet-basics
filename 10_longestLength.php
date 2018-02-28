@@ -25,9 +25,9 @@ function longestLength($str)
         for ($j=$i+1; $j <=strlen($str)-1; $j++) {
             // проверка, что символ не повторяющийся, не входит в строку
             if ((strpos($subStr, $str[$j])===false)&&($j!==strlen($str)-1)) {
-                # создаем посдстроку дописываем по символу.
+                // создаем посдстроку дописываем по символу.
                 $subStr.=$str[$j];
-                } elseif ($j==strlen($str)-1) {
+            } elseif ($j==strlen($str)-1) {
                   $subStr.=$str[$j];
                   $arrSubStr[]=$subStr;
                   break;
